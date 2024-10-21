@@ -3,14 +3,15 @@
 import React, { useState, ChangeEvent } from 'react';
 import CodeViewer from '@/components/code-viewer';
 import shadcnDocs from "@/utils/shadcn-docs";
+import { env } from "next-runtime-env";
 
 const Page: React.FC = () => {
   const [inputValue, setInputValue] = useState<string>('');
   const [response, setResponse] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
-  const API_URL = process.env.NEXT_PUBLIC_API_URL
-  const MODEL = process.env.NEXT_PUBLIC_MODEL
-  const AUTH_TOKEN = process.env.NEXT_PUBLIC_AUTH_TOKEN
+  const API_URL = env('NEXT_PUBLIC_API_URL');
+  const MODEL = env('NEXT_PUBLIC_MODEL')
+  const AUTH_TOKEN = env('NEXT_PUBLIC_AUTH_TOKEN');
   
 
   // Function to handle input change
