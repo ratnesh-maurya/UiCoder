@@ -13,9 +13,7 @@ const Page: React.FC = () => {
   const MODEL = env('NEXT_PUBLIC_MODEL');
   const AUTH_TOKEN = env('NEXT_PUBLIC_AUTH_TOKEN');
 
-  console.log(API_URL)
-  console.log(MODEL)
-  console.log(AUTH_TOKEN)
+  
   
 
   // Function to handle input change
@@ -161,7 +159,6 @@ const Page: React.FC = () => {
       setError('Failed to get a response from the server.');
     }
   };
-
 
 
   return (
