@@ -1,0 +1,4 @@
+NEXT_PUBLIC_API_URL =                                        #AI endpoint "https://*****************/initializ/v1/ai/chat"
+
+NEXT_PUBLIC_MODEL =                                            #"meta-llama/Llama-3.2-1B-Instruct"
+NEXT_PUBLIC_AUTH_TOKEN =                                  #generated from the initializ console
