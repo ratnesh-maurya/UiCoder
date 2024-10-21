@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
-const { configureRuntimeEnv } = require("next-runtime-env/build/configure");
+// const { configureRuntimeEnv } = require("next-runtime-env/build/configure");
 
-configureRuntimeEnv();
+// configureRuntimeEnv();
 
 module.exports = nextConfig;
