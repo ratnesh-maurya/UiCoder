@@ -9,9 +9,13 @@ const Page: React.FC = () => {
   const [inputValue, setInputValue] = useState<string>('');
   const [response, setResponse] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
-  const API_URL = env("NEXT_PUBLIC_API_URL");
-  const MODEL = env("NEXT_PUBLIC_MODEL");
-  const AUTH_TOKEN = env("NEXT_PUBLIC_AUTH_TOKEN");
+  const API_URL = env('NEXT_PUBLIC_API_URL');
+  const MODEL = env('NEXT_PUBLIC_MODEL');
+  const AUTH_TOKEN = env('NEXT_PUBLIC_AUTH_TOKEN');
+
+  console.log(API_URL)
+  console.log(MODEL)
+  console.log(AUTH_TOKEN)
   
 
   // Function to handle input change
@@ -161,7 +165,8 @@ const Page: React.FC = () => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen-full">
+    
+    <div className="flex flex-col items-center justify-center h-screen-full  bg-gradient-to-b from-purple-900 to-slate-900">
       <h1 className="text-3xl font-bold mt-10">Initializ AI</h1>
       <input
         className="border rounded-md mt-10 mb-7 p-2 m-2 w-1/3 text-black"
