@@ -4,4 +4,4 @@ const { configureRuntimeEnv } = require("next-runtime-env/build/configure");
 
 configureRuntimeEnv();
 
-export default nextConfig;
+module.exports = nextConfig;

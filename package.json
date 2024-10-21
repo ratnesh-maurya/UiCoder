@@ -14,6 +14,7 @@
     "codesandbox": "^2.2.3",
     "dedent": "^1.5.3",
     "next": "14.2.15",
+    "next-runtime-env": "^3.2.2",
     "react": "^18",
     "react-dom": "^18"
   },
